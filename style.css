@@ -1,0 +1,276 @@
+
+/*!
+Theme Name: Cocoon Child
+Description: Cocoon専用の子テーマ
+Theme URI: https://wp-cocoon.com/
+Author: わいひら
+Author URI: https://nelog.jp/
+Template:   cocoon-master
+Version:    1.1.3
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1023px以下*/
+@media screen and (max-width: 1023px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px){
+  /*必要ならばここにコードを書く*/
+}
+/* 全体のトーン調整：暖色系（パステルオレンジ・ベージュ・アースカラー） */
+.clinic-intro-page {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #5a4b41;
+  background-color: #fdfbf7;
+  line-height: 1.7;
+}
+
+.clinic-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ヘッダー・メインビジュアル */
+.clinic-hero {
+  background-color: #ffeeda; /* 温かみのある薄オレンジ */
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 4px dashed #ffcc99;
+}
+.clinic-hero .subtitle {
+  display: block;
+  font-size: 0.95rem;
+  color: #e67e22;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+.clinic-hero h1 {
+  font-size: 2.2rem;
+  color: #d35400;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+}
+.clinic-hero .hero-lead {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #7f6c5f;
+}
+
+/* 重要なお知らせ */
+.clinic-news {
+  max-width: 800px;
+  margin: -20px auto 20px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+.news-box {
+  background: #ffffff;
+  border: 2px solid #ffcc99;
+  border-radius: 30px;
+  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(224, 142, 69, 0.1);
+}
+.news-label {
+  background: #e67e22;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3px 12px;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+.news-text {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+/* 見出し共通 */
+.clinic-intro-page h2 {
+  font-size: 1.6rem;
+  color: #d35400;
+  text-align: center;
+  margin: 60px 0 30px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+.clinic-intro-page h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ffcc99;
+  border-radius: 2px;
+}
+
+/* 3つの特徴 */
+.clinic-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  border: 1px solid #f3ebe1;
+}
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.feature-card h3 {
+  font-size: 1.2rem;
+  color: #e67e22;
+  margin: 0 0 10px 0;
+}
+.feature-card p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: #6e5e53;
+}
+
+/* 診療時間テーブル */
+.table-wrapper {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ffcc99;
+}
+.clinic-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  min-width: 500px;
+}
+.clinic-schedule th, .clinic-schedule td {
+  padding: 14px;
+  border-bottom: 1px solid #ffeeda;
+}
+.clinic-schedule th {
+  background-color: #ffeeda;
+  color: #d35400;
+  font-weight: bold;
+}
+.clinic-schedule td:first-child, .clinic-schedule th:first-child {
+  background-color: #fff9f2;
+  font-weight: bold;
+}
+.schedule-note {
+  font-size: 0.85rem;
+  color: #7f6c5f;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+/* 医師紹介 */
+.clinic-doctor {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #f3ebe1;
+  margin-top: 40px;
+}
+.clinic-doctor h2 { margin-top: 0; }
+.doctor-flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.doctor-avatar {
+  width: 120px;
+  height: 120px;
+  background: #ffeeda;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border: 3px dashed #ffcc99;
+}
+.doctor-info h3 {
+  margin: 0 0 10px 0;
+  color: #a0522d;
+  font-size: 1.3rem;
+}
+.doctor-text {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+.doctor-bio {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.doctor-bio li {
+  margin-bottom: 5px;
+}
+
+/* アクセス */
+.clinic-access .access-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.clinic-access p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+.clinic-access .phone strong {
+  font-size: 1.3rem;
+  color: #d35400;
+}
+.map-placeholder {
+  background: #eee6dc;
+  height: 300px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f6c5f;
+}
+
+/* スマホ対応（レスポンシブ） */
+@media (max-width: 768px) {
+  .clinic-hero { padding: 50px 20px; }
+  .clinic-hero h1 { font-size: 1.8rem; }
+  .clinic-news { margin-top: 10px; padding: 0; }
+  .news-box { flex-direction: column; gap: 5px; text-align: center; border-radius: 15px; }
+  .doctor-flex { flex-direction: column; text-align: center; }
+  .doctor-avatar { margin: 0 auto; }
+  .clinic-doctor { padding: 20px; }
+}
+body:not(.post) #main {
+    margin: auto;
+}
+body {
+    background-image: url('images/leaves.webp');
+    background-repeat: repeat; /* 縦横に繰り返す */
+    background-size: auto;     /* 原寸サイズで表示 */
+}
